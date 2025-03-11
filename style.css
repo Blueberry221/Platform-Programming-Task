@@ -49,6 +49,23 @@ body {
     display: block;
 }
 
+.botBar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 70px;
+    background-image: url("Flying Kirby.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 button {
     padding: 10px 20px;
     border: none;
