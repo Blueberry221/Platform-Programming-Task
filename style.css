@@ -28,14 +28,14 @@ body {
 
 .nameBar {
     background-color: rgba(50, 90, 150, 0.85); 
-    padding: 0.5px;
+    padding: 10px;
     border-radius: 15px;
     margin: auto;
     width: fit-content;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
     box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 15px;
     text-align: center;
-    color: #ffffff;
+    color: rgb(210, 187, 247);
 }
 
 .container {
@@ -56,8 +56,8 @@ body {
     transform: translateX(-50%);
     width: 200px; 
     height: 70px;
-    background-image: url("Flying Kirby.gif");
-    background-size: contain;
+    background-image: url("Absolute Cinema.gif");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: solid rgba(255, 255, 255, 0.3);
