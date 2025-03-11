@@ -1,5 +1,9 @@
 body {
-    background-image: url(Night\ Sky.jpeg);
+    background-image: url(Night\ Sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
 }
 
 .topBar {
@@ -17,6 +21,22 @@ body {
     border-collapse: separate; 
     border-radius: 10px;
     overflow: hidden;
+}
+
+.nameBar {
+    background-color: rgba(156, 202, 215, 0.652);
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 12px; 
+    font-weight: bold;
+    color: #0837ba;
+    text-shadow: 2px 2px 5px rgba(39, 190, 137, 0.5);
+    box-shadow:#0533ff 0px 0px 15px;
+    text-align: center;
 }
 
 .container {
