@@ -31,8 +31,6 @@ function generateOptions() {
     let pilihanContainer = document.getElementById("pilihanContainer");
     pilihanContainer.innerHTML = "";
 
- 
-    
     let radioDiv = document.createElement("div");
     let dropdown = document.createElement("select");
     dropdown.name = "dropdownPilihan";
