@@ -14,7 +14,25 @@
         </div>
 
         <div class="container">
+            <form onsubmit="event.preventDefault(); generateInputs();">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+                
+                <label for="jumlahPilihan">Jumlah Pilihan:</label>
+                <input type="number" id="jumlahPilihan" name="jumlahPilihan" required min="1"><br><br>
+                
+                <button type="submit">OK</button>
+            </form>
             
+            <div id="inputContainer"></div>
+            
+            <div id="submitSection" style="display: none;">
+                <button onclick="generateOptions()">Submit</button>
+            </div>
+            
+            <div id="pilihanContainer"></div>
+            
+            <h3 id="resultContainer"></h3>
         </div>
 
     <script src="script.js"></script>
