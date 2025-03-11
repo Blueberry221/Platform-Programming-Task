@@ -12,7 +12,7 @@ function generateInputs() {
         label.textContent = "Pilihan " + i + ":";
         let input = document.createElement("input");
         input.name = "Pilihan" + i;
-        input.required = true;
+        input.required=true;
         
         container.appendChild(label);
         container.appendChild(input);
@@ -28,6 +28,14 @@ function generateOptions() {
     document.querySelectorAll("button").forEach(btn => btn.style.display = "none");
     
     let container = document.getElementById("inputContainer");
+    let inputs = container.getElementsByTagName("input");
+    for (let input of inputs) {
+        if (!input.checkValidity()) {
+            alert("Semua pilihan harus diisi!");
+            return;
+        }
+    }
+    
     let pilihanContainer = document.getElementById("pilihanContainer");
     pilihanContainer.innerHTML = "";
 
@@ -36,7 +44,6 @@ function generateOptions() {
     dropdown.name = "dropdownPilihan";
     dropdown.id = "dropdownPilihan";
     
-    let inputs = container.getElementsByTagName("input");
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].disabled = true;
     }
