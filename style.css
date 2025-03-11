@@ -1,1 +1,24 @@
+body {
+    background-image: url(Night\ Sky.jpeg);
+}
 
+.topBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-image: url("Flying\ Kirby.gif");
+    background-size: contain;
+    background-repeat:repeat;
+    border-style: solid;
+    border-color: rgb(75, 64, 64);
+    box-shadow: white 0px 0px 15px;
+    border-collapse: separate; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+
+}
