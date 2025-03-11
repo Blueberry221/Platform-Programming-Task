@@ -61,7 +61,22 @@ function generateOptions() {
         option.value = value;
         option.textContent = value;
         dropdown.appendChild(option);
+        
+        radio.addEventListener("change", function () {
+            dropdown.value = radio.value;
+        });
     }
+
+    dropdown.addEventListener("change", function () {
+        let selectedValue = dropdown.value;
+        let radios = document.getElementsByName("radioPilihan");
+        for (let radio of radios) {
+            if (radio.value === selectedValue) {
+                radio.checked = true;
+                break;
+            }
+        }
+    });
     
     pilihanContainer.appendChild(document.createElement("h3")).textContent = "Pilihan : ";
     pilihanContainer.appendChild(radioDiv);
